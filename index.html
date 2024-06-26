@@ -10,6 +10,14 @@
   <body>
     <div id="app">
       <h1>Image Editor</h1>
+      <div class="editor">
+        <div class="file-input">
+          <input type="file" id="upload" accept="image/*" />
+          <label for="upload">Select file</label>
+        </div>
+
+        <canvas id="canvas"></canvas>
+      </div>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
