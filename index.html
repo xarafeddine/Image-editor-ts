@@ -18,23 +18,31 @@
 
         <canvas id="canvas"></canvas>
 
-        <div class="filters">
-          <button id="grayscale">Grayscale</button>
-          <button id="sepia">Sepia</button>
-          <button id="blur">Blur</button>
-        </div>
+        <div class="edit-tools">
+          <div class="filters">
+            <button id="grayscale">Grayscale</button>
+            <button id="sepia">Sepia</button>
+            <button id="blur">Blur</button>
+          </div>
 
-        <div class="controls">
-          <label for="brightness">Brightness</label>
-          <input type="range" id="brightness" min="-100" max="100" value="0" />
-          <label for="contrast">Contrast</label>
-          <input type="range" id="contrast" min="-100" max="100" value="0" />
-        </div>
+          <div class="controls">
+            <label for="brightness">Brightness</label>
+            <input
+              type="range"
+              id="brightness"
+              min="-100"
+              max="100"
+              value="0"
+            />
+            <label for="contrast">Contrast</label>
+            <input type="range" id="contrast" min="-100" max="100" value="0" />
+          </div>
 
-        <div class="operations">
-          <button id="undo">Undo</button>
-          <button id="redo">Redo</button>
-          <button id="save">Save</button>
+          <div class="operations">
+            <button id="undo">Undo</button>
+            <button id="redo">Redo</button>
+            <button id="save">Save</button>
+          </div>
         </div>
       </div>
     </div>

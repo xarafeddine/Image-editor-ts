@@ -36,6 +36,7 @@ h1 {
 }
 
 #app {
+  min-width: max-content;
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
@@ -93,4 +94,84 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.editor {
+  display: flex;
+  justify-content: center;
+
+  align-items: center;
+  flex-direction: column;
+  background: rgb(0, 0, 0);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#upload {
+  opacity: 0;
+  width: 0.1px;
+  height: 0.1px;
+  position: absolute;
+}
+
+canvas {
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(219, 219, 219);
+  border-radius: 5px;
+  margin: 20px 0;
+  max-width: 100%;
+  height: auto;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls label,
+.controls button {
+  margin: 5px 0;
+}
+
+.controls input[type="range"] {
+  width: 100%;
+  max-width: 300px;
+}
+
+input[type="file"] {
+  display: block;
+}
+
+input[type="file"] + label {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #1a1a1a;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.filters {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+}
+
+.operations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.edit-tools{
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
