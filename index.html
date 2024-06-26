@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Image Editor</title>
     <link rel="stylesheet" href="src/style.css" />
@@ -10,6 +9,7 @@
   <body>
     <div id="app">
       <h1>Image Editor</h1>
+
       <div class="editor">
         <div class="file-input">
           <input type="file" id="upload" accept="image/*" />
@@ -30,8 +30,14 @@
           <label for="contrast">Contrast</label>
           <input type="range" id="contrast" min="-100" max="100" value="0" />
         </div>
+
+        <div class="operations">
+          <button id="undo">Undo</button>
+          <button id="redo">Redo</button>
+          <button id="save">Save</button>
+        </div>
       </div>
     </div>
-    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="src/main.ts"></script>
   </body>
 </html>
